@@ -1,0 +1,59 @@
+.Home-body {
+    display: flex;
+    min-height: 130vh;
+    background-color: whitesmoke;
+    flex-direction: column;
+    align-items: center;
+    font-size: calc(10px + 2vmin);
+    color: black;
+
+}
+
+.loki-logo{
+    width: 7%;
+    height: 7%;
+    margin-top: 3%;
+}
+
+.texto{
+    margin-left: 5%;
+    margin-top: 2%;
+    width: 45%;
+    float: left;
+    text-align: justify;
+}
+
+.charts-logo{
+    margin-right: 5%;
+    margin-top: -13%;
+    width: 40%;
+    height: 40%;
+    float: right;
+}
+
+.titulo{
+    margin-top: 1%;
+
+}
+
+.React-logo {
+    margin-top: -2%;
+    margin-left: 14%;
+    height: 40vmin;
+    pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .React-logo {
+        animation: React-logo-spin infinite 20s linear;
+    }
+}
+
+@keyframes React-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
