@@ -16,7 +16,7 @@ finalCorpus = []
 similar_tweets = []
 MONGO_HOST = "localhost"
 MONGO_PUERTO = "27017"
-MONGO_URI = "mongodb+srv://jorge:jorge1999@cluster0.rqa40.mongodb.net/test"
+MONGO_URI = "mongodb+srv://user:pass@cluster0.rqa40.mongodb.net/test"
 
 cliente = pymongo.MongoClient(MONGO_URI, serverSelectionTimeoutMS=1000)
 baseDatos = cliente["TFG"]

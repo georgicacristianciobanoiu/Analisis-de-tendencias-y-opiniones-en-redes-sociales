@@ -10,7 +10,6 @@ stop_words = set(stopwords.words('spanish'))
 
 read_files = glob.glob("./Titulares/*.json")
 entidades = []
-print(read_files)
 
 client = language_v1.LanguageServiceClient()
 type_ = language_v1.Document.Type.PLAIN_TEXT
@@ -22,7 +21,6 @@ for file in read_files:
         titular = elem['titular']
         fecha = elem['fecha']
         origen = ""
-        print(elem['origen'])
         if type(elem['origen']) is list and len(elem['origen']) > 0:
             origen = elem['origen'][0]
         elif type(elem['origen']) is str:
@@ -41,6 +39,7 @@ for file in read_files:
                 e = {'titular': titular, 'nombre': entity.name, 'tipo': language_v1.Entity.Type(entity.type_).name,
                      'fecha': fecha, 'origen': origen}
                 entidades.append(e)
+                print("Entidad: ", e)
             # print(e.nombre)
             # print(e.tipo)
             # print(listaEntidades[0].nombre)
