@@ -1,1 +1,0 @@
-scrapy crawl --set FEED_EXPORT_ENCODING=utf-8 factualSpider  -o ../../Titulares/factualTitulares.json && scrapy crawl --set FEED_EXPORT_ENCODING=utf-8 malditaBulosSpider -o ../../Titulares/malditaTitulares.json && scrapy crawl --set FEED_EXPORT_ENCODING=utf-8 efeSpider  -o ../../Titulares/efeTitulares.json
